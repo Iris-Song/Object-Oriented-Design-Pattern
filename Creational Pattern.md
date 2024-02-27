@@ -1,6 +1,7 @@
 # Creational Pattern
 abstract instantiation process
 
+
 ## Abstract Factory (Kit)
 ### Intent
 provide an interface for creating families of related or dependent objects without specifying their concrete classes.
@@ -11,4 +12,27 @@ provide an interface for creating families of related or dependent objects witho
 + you want to provide a class library of products, and you want to reveal just their interfaces, not their implementations
 ### Structure
 ![](./img/Abstract%20Factory.png)
-### [Sample Code]()
+### Participants
++ AbstractFactory
++ ConcreteFactory
++ AbstractProduct
++ ConcreteProduct
++ Client
+### [Sample Code](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/code/Abstract%20Factory.cpp)
+
+## Builder
+### Intent
+seperate the construction of a complex object from its representation so that the same construction process can create different representations. 
+### Applicability
++ the algorithm for creating a complex object should be independent of the parts that make up the object and how they are assembled.
++ the construction process must allow different representations for the object that's constructed.
+### Structure
+![](./img/Builder.png)
+### Participants
++ Builder (TextConverter)
++ ConcreteBuilder (ASCIIConverter, TeXConverter, TextWidgetConverter)
++ Director (RTFReader)
++ Product (ASCIIText, TeXText, TextWidget)
+### Collaborations
+![](./img/Builder%20Co.png)
+### [Sample Code](./code/Builder.cpp)

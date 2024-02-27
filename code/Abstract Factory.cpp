@@ -49,6 +49,9 @@ private:
     // ...
 };
 
+
+
+
 // MazeFactory can create component of maze
 class MazeFactory{
 public:

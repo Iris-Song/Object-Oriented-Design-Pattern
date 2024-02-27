@@ -1,7 +1,7 @@
-# Object-Oriented Design Pattern
+# [Object-Oriented Design Pattern](https://www.javier8a.com/itc/bd1/articulo.pdf)
 
-## Creational Pattern
-+ Abstract Factory
+## [Creational Pattern](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md)
++ [Abstract Factory](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#abstract-factory-kit)
 + Builder
 + Factory Method
 + Prototype
