@@ -2,7 +2,7 @@
 
 ## [Creational Pattern](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md)
 + [Abstract Factory](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#abstract-factory-kit)
-+ Builder
++ [Builder](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#builder)
 + Factory Method
 + Prototype
 + Singleton
