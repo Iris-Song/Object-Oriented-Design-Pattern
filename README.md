@@ -3,11 +3,11 @@
 ## [Creational Pattern](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md)
 + [Abstract Factory](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#abstract-factory-kit)
 + [Builder](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#builder)
-+ Factory Method
-+ Prototype
-+ Singleton
-## Structural Pattern
-+ Adapter
++ [Factory Method](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#factory-method-virtual-constructor)
++ [Prototype](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#prototype)
++ [Singleton](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#singleton)
+## [Structural Pattern](./Structural%20Pattern.md)
++ [Adapter]()
 + Bridge
 + Composite
 + Decorator
