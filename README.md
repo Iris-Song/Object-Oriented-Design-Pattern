@@ -7,13 +7,13 @@
 + [Prototype](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#prototype)
 + [Singleton](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#singleton)
 ## [Structural Pattern](./Structural%20Pattern.md)
-+ [Adapter]()
-+ Bridge
-+ Composite
-+ Decorator
-+ Facade
-+ Flyweight
-+ Proxy
++ [Adapter](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#adapter-wrapper)
++ [Bridge](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#bridge-handlebody)
++ [Composite](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#composite)
++ [Decorator](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#decorator-wrapper)
++ [Facade](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#facade)
++ [Flyweight](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#facade)
++ [Proxy](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#facade)
 ## Behavioral Pattern
 + Chain of Responsibility
 + Command
