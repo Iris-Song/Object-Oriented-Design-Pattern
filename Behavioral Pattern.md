@@ -132,3 +132,105 @@ Without violating encapsulation, capture and externalize an object's internal st
     - is responsible for the memento's safekeeping.
     - never operates on or examines the contents of a memento.
 ### [Sample Code](./code/Memento.cpp)
+
+## Observer (Dependents, Publish-Subscribe)
+### Intent
+Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+### Applicability
++ When an abstraction has two aspects, one dependent on the other. Encapsulating these aspects in separate objects lets you vary and reuse them independently.
++ When a change to one object requires changing others, and you don't know how many objects need to be changed.
++ When an object should be able to notify other objects without making assumptions about who these objects are.In other words, you don't want these objects tightly coupled.
+### Structure
+![](./img/Observer.png)
+### Participants
++ Subject
+    - knows its observers. Any number of Observer objects may observe a subject.
+    - provides an interface for attachingand detaching Observer objects.
++ Observer
+    - defines an updating interface for objects that should be notified of changes in a subject.
++ ConcreteSubject
+    - stores state of interest to ConcreteObserver objects.
+    - sends a notification to its observers when itsstate changes.
++ ConcreteObserver
+    - maintains a reference to a ConcreteSubject object.
+    - stores state that should stay consistent with the subject's.
+    - implements the Observer updating interface to keep its state consistent with the subject's.
+### [Sample Code](./code/Observer.cpp)
+
+## State
+### Intent
+Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+### Applicability
++ An object's behavior depends on its state, and it must change its behavior at run-time depending on that state.
++ Operations have large, multipart conditional statements that depend on the object's state.
+### Structure
+![](./img/State.png)
+### Participants
++ Context (TCPConnection)
+    - defines the interface ofinterest to clients.
+    - maintains an instance of a ConcreteState subclass that defines the current state.
++ State (TCPState)
+    - defines an interface for encapsulating the behavior associated with a particular state of the Context.
+### [Sample Code](./code/State.cpp)
+
+## Strategy (Policy)
+### Intent
+Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+### Applicability
++ many related classes differ only in their behavior. Strategies provide a way to configure a class with one of many behaviors.
++ you need different variants of an algorithm.
++ an algorithm uses data that clients shouldn't know about. Use the Strategy pattern to avoid exposing complex, algorithm-specific data structures.
++ a class defines many behaviors, and these appear as multiple conditional statements in its operations. Instead of many conditionals, move related conditional branches into their own Strategy class.
+### Structure
+![](./img/Strategy.png)
+### Participants
++ Strategy (Compositor)
+    - declares an interface common to all supported algorithms. Context uses this interface to call the algorithm defined by a ConcreteStrategy.
++ ConcreteStrategy (SimpleCompositor, TeXCompositor, ArrayCompositor)
+    - implements the algorithm using the Strategy interface.
++ Context (Composition)
+    - is configured with a ConcreteStrategy object.
+    - maintains a reference to a Strategy object.
+    - may define an interface that lets Strategy access its data.
+### [Sample Code](./code/Strategy.cpp)
+
+## Template Method
+### Intent
+Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+### Applicability
++ to implement the invariant parts of an algorithm once and leave it up to subclasses to implement the behavior that can vary.
++ when common behavior among subclasses should be factored and localized in a common class to avoid code duplication.
++ to control subclasses extensions. 
+### Structure
+![](./img/Template%20Method.png)
+### Participants
++ AbstractClass (Application)
+    - defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm.
+    - implements a template method defining the skeleton of an algorithm. The template method calls primitive operations as well as operations defined in AbstractClass or those of other objects.
++ ConcreteClass (MyApplication)
+    - implements the primitive operations to carry outsubclass-specific steps of the algorithm.
+### [Sample Code](./code/Template%20Method.cpp)
+
+## Visitor
+### Intent
+Represent an operation to be performed on the elements of an object structure.Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+### Applicability
++ an object structure contains many classes of objects with differing interfaces, and you want to perform operations on these objects that depend on their concrete classes.
++ many distinct and unrelated operations need to be performed on objects in an object structure, and you want to avoid "polluting" their classes with these operations. Visitor lets you keep related operations together by defining them in one class. When the object structure is shared by many applications, use Visitor to put operations in just those applications that need them.
++ the classes defining the object structure rarely change, but you often want to define new operations over the structure. 
+### Structure
+![](./img/Visitor.png)
+### Participants
++ Visitor (NodeVisitor)
+    - declares a Visit operation for each class of ConcreteElement in the object structure. The operation's name and signature identifies the class that sends the Visit request to the visitor. That lets the visitor determine the concrete class of the element being visited. Then the visitor can access the element directly through its particular interface.
++ ConcreteVisitor (TypeCheckingVisitor)
+    - implements each operation declared byVisitor.Eachoperation implements a fragment of the algorithm defined for the corresponding class of object in the structure. ConcreteVisitor provides the context for the algorithm and stores its local state. This state often accumulates results during the traversal of the structure.
++ Element (Node)
+    - defines an Accept operation that takes a visitor as an argument.
++ ConcreteElement (AssignmentNode,VariableRefNode)
+    - implements an Accept operation that takes a visitor as an argument.
++ ObjectStructure (Program)
+    - can enumerate its elements.
+    - mayprovide a high-level interface to allow the visitor to visit its elements.
+    - may either be a composite or a collection such as a list or a set.
+### [Sample Code](./code/)
