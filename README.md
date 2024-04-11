@@ -1,6 +1,6 @@
 # [Object-Oriented Design Pattern](https://www.javier8a.com/itc/bd1/articulo.pdf)
 
-## [Creational Pattern](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md)
+## [Creational Pattern](./Creational%20Pattern.md)
 + [Abstract Factory](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#abstract-factory-kit)
 + [Builder](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#builder)
 + [Factory Method](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Creational%20Pattern.md#factory-method-virtual-constructor)
@@ -14,7 +14,7 @@
 + [Facade](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#facade)
 + [Flyweight](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#facade)
 + [Proxy](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Structural%20Pattern.md#facade)
-## Behavioral Pattern
+## [Behavioral Pattern](./Behavioral%20Pattern.md)
 + Chain of Responsibility
 + Command
 + Intepreter
