@@ -21,8 +21,8 @@
 + [Iterator](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#iterator-cursor)
 + [Mediator](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#mediator)
 + [Memento](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#memento-token)
-+ Observer
-+ State
-+ Strategy
-+ Template Method
-+ Visitor
++ [Observer](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#observer-dependents-publish-subscribe)
++ [State](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#state)
++ [Strategy](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#strategy-policy)
++ [Template Method](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#template-method)
++ [Visitor](https://github.com/Iris-Song/Object-Oriented-Design-Pattern/blob/main/Behavioral%20Pattern.md#visitor)
