@@ -48,7 +48,7 @@ public:
         return license;
     }
 
-    VehicleType GetVehicleType()
+    VehicleType GetVehicleType() const
     {
         return vehicleType;
     }
@@ -87,7 +87,7 @@ public:
         return isOccupied;
     }
 
-    ParkingSpotType GetType()
+    ParkingSpotType GetType() const
     {
         return parkingSpotType;
     }
@@ -479,7 +479,7 @@ public:
     }
 
     // Method to get a new parking ticket
-    ParkingTicket getNewParkingTicket(const Vehicle &vehicle)
+    ParkingTicket getNewParkingTicket(Vehicle &vehicle)
     {
         std::lock_guard<std::mutex> lock(parkingLotMutex); // Ensures thread safety
 
@@ -493,7 +493,7 @@ public:
         ticket.saveInDB();
 
         // If the ticket is successfully saved, increment the parking spot count
-        incrementSpotCount(vehicle.getType());
+        incrementSpotCount(vehicle.GetVehicleType());
         activeTickets[ticket.getTicketNumber()] = ticket;
 
         return ticket;
